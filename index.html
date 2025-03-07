@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -19,11 +23,12 @@
         <div class="header-container">
           <img src="./assets/logo.png" alt="logomarca" />
           <nav>
+            <i id="menu" class="fa-solid fa-bars"></i>
             <ul>
-              <li><a href="">Inicio</a></li>
-              <li><a href="">Especialidades</a></li>
-              <li><a href="">Quem somos</a></li>
-              <li><a href="">Depoimentos</a></li>
+              <li><a href="#banner">Inicio</a></li>
+              <li><a href="#especialidades">Especialidades</a></li>
+              <li><a href="#foto-advogado">Quem somos</a></li>
+              <li><a href="#depoimentos">Depoimentos</a></li>
               <li><a href="./pages/contato/index.html">Contato</a></li>
             </ul>
           </nav>
@@ -32,7 +37,7 @@
 
       <!-- banner -->
 
-      <section class="container-section-banner">
+      <section class="container-section-banner" id="banner">
         <div class="container-div-banner">
           <div class="container-content-banner">
             <h1 class="title">
@@ -112,7 +117,7 @@
 
       <section class="container-section-about-us">
         <div class="container-div-about-us">
-          <img src="assets/advogado.png" alt="advogado" />
+          <img src="assets/advogado.png" alt="advogado" id="foto-advogado" />
           <h2>Quem somos</h2>
           <p>
             O escritório DC Advogados Associados foi fundado por Dr. Carlos
@@ -182,7 +187,7 @@
 
       <!-- Depoimentos -->
 
-      <section class="container-section-testimonials">
+      <section class="container-section-testimonials" id="depoimentos">
         <div class="container-div-testimonials">
           <h2>Depoimentos</h2>
           <div class="container-cards-testimonials">

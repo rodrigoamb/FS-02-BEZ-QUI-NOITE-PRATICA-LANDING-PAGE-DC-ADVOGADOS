@@ -8,7 +8,15 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* header */
+
+#menu {
+  display: none;
+}
 
 header {
   background-color: #1a2b4b;
@@ -16,6 +24,13 @@ header {
   justify-content: center;
   padding: 30px 0px;
   border-bottom: 20px solid #b68954;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  left: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 nav ul li a {
@@ -56,6 +71,7 @@ nav ul {
   justify-content: center;
   position: relative;
   border-bottom: 20px solid #b68954;
+  padding-top: 169px;
 }
 
 .container-section-banner::before {
@@ -123,6 +139,7 @@ nav ul {
 .container-section-specialties {
   display: flex;
   justify-content: center;
+  scroll-margin-top: 150px;
 }
 
 .container-div-specialties {
@@ -209,6 +226,7 @@ nav ul {
   border-radius: 100%;
   object-fit: cover;
   border: 4px solid #b68954;
+  scroll-margin-top: 200px;
 }
 
 .container-div-about-us h2 {
@@ -267,6 +285,7 @@ nav ul {
   display: flex;
   justify-content: center;
   padding: 6.25rem 0;
+  scroll-margin-top: 150px;
 }
 
 .container-div-testimonials {
@@ -302,6 +321,7 @@ nav ul {
   padding: 30px;
   text-align: center;
   border-radius: 20px;
+  position: relative;
 }
 
 .card-testimonials h3 {
@@ -317,4 +337,117 @@ nav ul {
 .aspas {
   position: absolute;
   bottom: 370px;
+}
+
+/* ultimo banner */
+
+.container-section-last-banner {
+  background-image: url(./assets/banner-aperto-maos.png);
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
+  position: relative;
+}
+
+.container-section-last-banner:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 43, 75, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.container-div-last-banner {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  z-index: 1;
+}
+
+.container-div-last-banner h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  border-bottom: 8px solid #b68954;
+  padding-bottom: 1.3rem;
+}
+
+.container-div-last-banner p {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+/* footer */
+
+footer {
+  background-color: #b68954;
+  color: white;
+  padding: 3rem 0;
+}
+
+footer p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1300px) {
+  nav ul {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+    color: white;
+    font-size: 2.5rem;
+  }
+
+  #menu:hover {
+    cursor: pointer;
+    color: #b68954;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container img {
+    width: 240px;
+  }
+
+  .container-section-banner {
+    padding: 4rem 0;
+    margin-top: 139px;
+  }
+
+  .container-content-banner {
+    width: 100%;
+  }
+
+  #image-justice {
+    display: none;
+  }
+
+  .container-cards-specialties {
+    justify-content: center;
+  }
+
+  .container-cards-testimonials {
+    justify-content: center;
+  }
+
+  .container-div-last-banner h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 625px) {
+  .container-div-numbers {
+    justify-content: center;
+  }
 }
